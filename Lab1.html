@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+	<style>
+		td{
+			padding: 10px
+		}
+	</style>
+</head>
+<body>
+	<center>
+		<h2>Online Form</h2>
+		<form>
+			<table>
+				
+				<tr>
+					<td><label for="name">Name</label></td>
+					<td>:</td>
+					<td><input type="text" name="t1" id="name" maxlength="25" placeholder="Enter your name here" required></td>
+				</tr>
+
+				<tr>
+					<td><label for="email">Email</label></td>
+					<td>:</td>
+					<td><input type=" text" name="t2" id="email" value="test@example.com" required autofocus></td>
+				</tr>
+
+				<tr>
+					<td><label for="pwd"> Password</label></td>
+					<td>:</td>
+					<td><input type="password" name="p1" id="pwd" minlength="6" required=""></td>
+				</tr>
+
+				<tr>
+					<td><label for="cate">Category</label></td>
+					<td>:</td>
+					<td>
+						<select name="d1" id="cate" required="">
+						<option value="Student">Student</option>
+						<option value="Employee">Employee</option>
+						<option value="Freelancer" selected>Freelancer</option>
+					    </select>
+					</td>
+				</tr>
+
+				<tr>
+					<td><label for="d1">Event Date</label></td>
+					<td>:</td>
+					<td><input type="Date" name="d1" id="d1" required></td>
+				</tr>
+
+				<tr>
+					<td>Tickets</td>
+					<td>:</td>
+					<td><input type="radio" id="tic1" name="Tickets" value="1 Ticket">
+						<label for="tic1">1 Ticket</label>&nbsp;&nbsp;&nbsp;
+						<input type="radio" id="tic2" name="Tickets" value="2 Tickets" checked required>
+						<label for="tic2">2 Tickets</label>&nbsp;&nbsp;&nbsp;
+						<input type="radio" id="tic3" name="Tickets" value="3 Tickets">
+						<label for="tic3">3 Tickets</label>
+					</td>
+				</tr>
+
+				<tr>
+					<td>Payments</td>
+					<td>:</td>
+					<td><input type="checkbox" id="check" name="Payments" value="Online Payment" required>
+						<label for="check">Online Payment</label>
+					</td>
+				</tr><br><br>
+
+				<tr>
+					<td><label for="notes">Notes</label></td>
+					<td>:</td>
+					<td><textarea id="notes" name="Notes" rows="5" cols="25" placeholder="Your notes here"></textarea></td>
+				</tr>
+			</table>
+			<input type="submit" value="Submit">
+		</form>
+	</center>
+</body>
+</html>
