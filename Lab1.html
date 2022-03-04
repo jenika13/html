@@ -3,17 +3,23 @@
 <head>
 	<title>Form</title>
 	<style>
+		body{
+			background: linear-gradient(120deg, #71b7e6, #9b59b6);
+			background-attachment: fixed;
+		}
 		td{
-			padding: 10px
+			padding: 10px;
+		}
+		table{
+			background-color: white;
 		}
 	</style>
 </head>
 <body>
 	<center>
 		<h2>Online Form</h2>
-		<form>
-			<table>
-				
+		<form action="" method="" target="_blank">
+			<table style="border-radius: 10px;">
 				<tr>
 					<td><label for="name">Name</label></td>
 					<td>:</td>
@@ -75,8 +81,13 @@
 					<td>:</td>
 					<td><textarea id="notes" name="Notes" rows="5" cols="25" placeholder="Your notes here"></textarea></td>
 				</tr>
+				
+				<tr>
+					<td colspan="3" align="center">
+						<input type="submit" value="Submit" style="background: linear-gradient(120deg, #71b7e6, #9b59b6);">
+					</td>
+				</tr>
 			</table>
-			<input type="submit" value="Submit">
 		</form>
 	</center>
 </body>
